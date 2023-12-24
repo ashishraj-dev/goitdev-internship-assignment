@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+:root {
+  --color-primary: #6ed1ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  /* font-family: 'Arial', sans-serif; */
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px 90px;
+  width: 70vw;
+  height: 50vh;
+}
+
+
+.container .box .circle {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: conic-gradient(
+    from 0deg,
+    var(--clr) 0%,
+    var(--clr) 0% var(--i),
+    #ede8e8 var(--i),
+    #ede8e8 100%
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .box .circle::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: #f4f4f4;
+  border-radius: 50%;
+}
+
+.container .box h2, h3 {
+  position: relative;
+  text-align: center;
+  font-size: 1rem;
+  color: #4d4d4d;
+  font-weight: 600;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80vw;
+  height: 400px;
+  /* max-width: 100%; */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.wrapper .progress-bar {
+  height: 5px;
+  width: 40%;
+  margin-top: 60px;
+  margin-left: 80px;
+  background-color: #BFADA3;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 0 10px inset rgba(252, 252, 252, 0.827);
+}
+
+/* * + .progress-bar {
+  margin-top: 2rem;
+} */
+
+.wrapper .progress-bar .bar {
+  width: 0;
+  height: 100%;
+  background-color: #B6244F;
+  
+  /*Lollipop background gradient*/
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .2) 50%,
+    rgba(255, 255, 255, .2) 75%,
+    transparent 75%,
+    transparent
+  );
+ 
+  background-size: 31px 30px;
+  animation: move 2s linear infinite;
+  box-shadow: 2px 0 10px inset rgba(0,0,0,0.2);
+  transition: width 2s ease-out;
+  
+}
+
+/*Lollipop background gradient animation*/
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 30px 30px;
+  }
+}
+
+
+.one::before {
+  content: 'HTML5/CSS3';
+  position: absolute;
+  top: 30px;
+}
+
+.one::after {
+  content: '95%';
+  position: absolute;
+  left: 540px;
+  top: 30px;
+}
+
+.two::before {
+  content: 'WordPress';
+  position: absolute;
+  top: 130px;
+  left: 80px;
+}
+
+.two::after {
+  content: '90%';
+  position: absolute;
+  left: 540px;
+  top: 130px;
+}
+
+.three::before {
+  content: 'PHP';
+  position: absolute;
+  top: 230px;
+  left: 80px;
+}
+
+.three::after {
+  content: '80%';
+  position: absolute;
+  left: 540px;
+  top: 230px;
+}
+
+.four::before {
+  content: 'Java';
+  position: absolute;
+  top: 330px;
+  left: 80px;
+}
+
+.four::after {
+  content: '85%';
+  position: absolute;
+  left: 540px;
+  top: 330px;
+}
+
+.five::before {
+  content: 'Design';
+  position: absolute;
+  top: 30px;
+  left: 650px;
+}
+
+.five::after {
+  content: '100%';
+  position: absolute;
+  left: 1100px;
+  top: 30px;
+}
+
+.six::before {
+  content: 'Ruby';
+  position: absolute;
+  top: 130px;
+  left: 650px;
+}
+
+.six::after {
+  content: '70%';
+  position: absolute;
+  left: 1110px;
+  top: 130px;
+}
+
+.seven::before {
+  content: 'Python';
+  position: absolute;
+  top: 230px;
+  left: 650px;
+}
+
+.seven::after {
+  content: '85%';
+  position: absolute;
+  left: 1110px;
+  top: 230px;
+}
+
+.eight::before {
+  content: 'jQuery';
+  position: absolute;
+  top: 330px;
+  left: 650px;
+}
+
+.eight::after {
+  content: '75%';
+  position: absolute;
+  left: 1110px;
+  top: 330px;
+}
+
+.work-tab {
+  background-color: #FF9000;
+  height: 130vh;
+  width: 100vw;
+  margin-top: 50px;
+  padding: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.work-tab .work-heading {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 2.5rem;
+  color: #ede8e8;
+}
+
+.work-tab .work-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 12px;
+  padding-left: 55px;
+  padding-right: 100px;
+  margin-left: 70px;
+  position: relative;
+}
+
+.project-images, .image-hover {
+  height: 280px;
+  width: 280px;
+}
